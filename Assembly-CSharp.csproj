@@ -56,14 +56,17 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Controller\BulletController.cs" />
+    <Compile Include="Assets\Scripts\Controller\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Controller\BulletEmitterController.cs" />
     <Compile Include="Assets\Scripts\Controller\SpriteAnimatorController.cs" />
     <Compile Include="Assets\Scripts\Starter.cs" />
     <Compile Include="Assets\Scripts\View\LevelObjectView.cs" />
+    <Compile Include="Assets\Scripts\Controller\CannonAimController.cs" />
+    <Compile Include="Assets\Scripts\Utils\ContactPooler.cs" />
+    <Compile Include="Assets\Scripts\View\CannonView.cs" />
     <Compile Include="Assets\Scripts\Controller\PlayerTransformController.cs" />
     <Compile Include="Assets\Scripts\Configs\SpriteAnimatorConfig.cs" />
-    <Compile Include="Assets\Scripts\Utils\ContactPooler.cs" />
-    <Compile Include="Assets\Scripts\Controller\CannonAimController.cs" />
-    <Compile Include="Assets\Scripts\View\CannonView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
