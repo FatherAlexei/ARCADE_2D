@@ -6,21 +6,34 @@ namespace Arcade
 {
     public class Starter : MonoBehaviour
     {
-        [SerializeField] private SpriteAnimatorConfig _playerConfig;
-        [SerializeField] private int animSpeed = 15;
+        private PlayerController _playerController;
+        private CannonAimController _aimController;
+        private BulletEmitterController _bulletEmitterController;
+        private CameraController _cameraController;
+        private CoinsController _coinsController;
+
+
         [SerializeField] private LevelObjectView _playerView;
-        [SerializeField] private SpriteAnimatorController _playerAnimator;
+        [SerializeField] private CannonView _cannonView;
+        [SerializeField] private List<LevelObjectView> _coinsView;
+
         void Awake()
         {
-            _playerConfig = Resources.Load<SpriteAnimatorConfig>("PlayerAnimCfg");
-            _playerAnimator = new SpriteAnimatorController(_playerConfig);
-            _playerAnimator.StarAnimation(_playerView._spriteRenderer, AnimState.Run, true, animSpeed);
+            _playerController = new PlayerController(_playerView);
+            _aimController = new CannonAimController(_cannonView.muzzleTransform, _playerView._transform);
+            _bulletEmitterController = new BulletEmitterController(_cannonView.bullets, _cannonView.emitter);
+            _cameraController = new CameraController(_playerView, Camera.main.transform);
+            _coinsController = new CoinsController(_playerView, _coinsView);
         }
 
         // Update is called once per frame
         void Update()
         {
-            _playerAnimator.Update();
+            _playerController.Update();
+            _aimController.Update();
+            _bulletEmitterController.Update();
+            _cameraController.Update();
+            _coinsController.Update();
         }
     }
 }
