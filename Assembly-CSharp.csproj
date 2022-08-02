@@ -62,13 +62,16 @@
     <Compile Include="Assets\Scripts\Controller\SpriteAnimatorController.cs" />
     <Compile Include="Assets\Scripts\Starter.cs" />
     <Compile Include="Assets\Scripts\View\LevelObjectView.cs" />
+    <Compile Include="Assets\Scripts\View\CoinView.cs" />
+    <Compile Include="Assets\Scripts\Controller\GeneratorController.cs" />
     <Compile Include="Assets\Scripts\Controller\CannonAimController.cs" />
+    <Compile Include="Assets\Scripts\View\GeneratorLevelView.cs" />
     <Compile Include="Assets\Scripts\Utils\ContactPooler.cs" />
     <Compile Include="Assets\Scripts\Controller\CoinsController.cs" />
     <Compile Include="Assets\Scripts\View\CannonView.cs" />
     <Compile Include="Assets\Scripts\Controller\PlayerTransformController.cs" />
     <Compile Include="Assets\Scripts\Configs\SpriteAnimatorConfig.cs" />
-    <Compile Include="Assets\Scripts\View\CoinView.cs" />
+    <Compile Include="Assets\Scripts\Controller\MarshingSquareController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
