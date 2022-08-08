@@ -70,8 +70,18 @@
     <Compile Include="Assets\Scripts\Controller\CoinsController.cs" />
     <Compile Include="Assets\Scripts\View\CannonView.cs" />
     <Compile Include="Assets\Scripts\Controller\PlayerTransformController.cs" />
-    <Compile Include="Assets\Scripts\Configs\SpriteAnimatorConfig.cs" />
     <Compile Include="Assets\Scripts\Controller\MarshingSquareController.cs" />
+    <Compile Include="Assets\Scripts\Configs\SpriteAnimatorConfig.cs" />
+    <Compile Include="Assets\Scripts\Configs\QuestConfig.cs" />
+    <Compile Include="Assets\Scripts\Configs\QuestItemConfig.cs" />
+    <Compile Include="Assets\Scripts\Configs\QuestStoryConfig.cs" />
+    <Compile Include="Assets\Scripts\Controller\QuestController.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IQuest.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IQuestModel.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IQuestStory.cs" />
+    <Compile Include="Assets\Scripts\View\QuestObjectView.cs" />
+    <Compile Include="Assets\Scripts\Model\CoinQuestModel.cs" />
+    <Compile Include="Assets\Scripts\Controller\QuestConfiguratorController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
